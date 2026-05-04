@@ -1,0 +1,138 @@
+/* Essential custom styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #F1E7D4;
+    color: #59362A;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.font-script {
+    font-family: '"Cormorant Garamond"', serif;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    background-color: rgba(89, 54, 42, 0.95);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #D6B4A1;
+    display: block;
+    transition: 0.3s;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: #C05C27;
+}
+
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+    color: #D6B4A1;
+    cursor: pointer;
+}
+
+.hero-bg {
+    background: linear-gradient(rgba(74, 90, 40, 0.6), rgba(89, 54, 42, 0.8)), url("https://picsum.photos/seed/indianwedding/1920/1080") center center no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.mandala-pattern {
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C05C27' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.gold-border {
+    border: 1px solid #D6B4A1;
+}
+
+.btn-saffron {
+    background-color: #C05C27;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.btn-saffron:hover {
+    background-color: #59362A;
+    transform: translateY(-2px);
+}
+
+/* Timeline specific styles */
+.timeline-line {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #D6B4A1;
+    transform: translateX(-50%);
+}
+
+@media (max-width: 768px) {
+    .timeline-line {
+        left: 24px;
+        transform: none;
+    }
+}
+
+.timeline-dot {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: #F1E7D4;
+    border: 3px solid #C05C27;
+    z-index: 10;
+    margin-top: 24px;
+}
+
+@media (max-width: 768px) {
+    .timeline-dot {
+        left: 24px;
+        transform: translateX(-50%);
+    }
+}
+
+.img-tilt-right {
+    transform: rotate(3deg);
+    transition: transform 0.3s ease;
+}
+
+.img-tilt-left {
+    transform: rotate(-3deg);
+    transition: transform 0.3s ease;
+}
+
+.img-tilt-right:hover,
+.img-tilt-left:hover {
+    transform: rotate(0deg);
+}

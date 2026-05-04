@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitesh & Nazneen Wedding</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon/favicon-32x32.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="js/tailwind-config.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="home" class="mandala-pattern">
+
+    <!-- Navigation Overlay -->
+    <div id="myNav" class="overlay">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <div class="overlay-content font-script">
+            <img src="img/logo.png" alt="Mitesh and Nazneen Logo" class="h-32 md:h-48 w-auto mx-auto mb-8 drop-shadow-md">
+            <a href="#home" onclick="closeNav()">Home</a>
+            <a href="#itinerary" onclick="closeNav()">Itinerary</a>
+            <a href="#upload-photos" onclick="closeNav()">Upload Photos</a>
+            <a href="#gallery" onclick="closeNav()">Gallery</a>
+        </div>
+    </div>
+
+    <!-- Sticky Header -->
+    <nav class="fixed w-full z-40 backdrop-blur-md py-4 px-6">
+        <div class="max-w-7xl mx-auto flex justify-end items-center">
+            <!-- <a href="index.html" class="text-3xl font-script font-bold text-burgundy tracking-wider">
+                M & N
+            </a> -->
+            <button onclick="openNav()" class="hover:text-saffron transition-colors">
+                <i class="fa-solid fa-bars text-3xl"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero-bg h-screen flex flex-col justify-center items-center text-center px-4 relative">
+        <div class="p-8 border-2 border-gold/50 backdrop-blur-sm bg-maroon/30 rounded-lg flex flex-col items-center">
+            <div
+                class="w-48 h-48 md:w-64 md:h-64 rounded-full mb-6 shadow-lg backdrop-blur-md flex items-center justify-center p-6">
+                <img src="img/logo.png" alt="Mitesh & Nazneen Logo" class="w-full h-full object-contain -ml-4">
+            </div>
+            <h1 class="font-script text-6xl md:text-8xl text-ivory drop-shadow-lg mb-4">Mitesh & Nazneen</h1>
+            <div class="flex items-center justify-center gap-4 mb-4">
+                <div class="h-px w-16 bg-gold"></div>
+                <p class="text-gold tracking-widest text-lg uppercase font-light">Are getting married</p>
+                <div class="h-px w-16 bg-gold"></div>
+            </div>
+            <p class="text-ivory text-xl md:text-2xl font-light tracking-wide">05 . 07 . 2026 <span
+                    class="mx-4 font-normal text-gold">|</span> 11 . 07 . 2026</p>
+        </div>
+
+        <a href="#itinerary" class="absolute bottom-10 text-gold animate-bounce">
+            <i class="fa-solid fa-chevron-down text-3xl drop-shadow-md"></i>
+        </a>
+    </header>
+
+    <!-- Compact Itinerary Section -->
+    <section id="itinerary" class="py-20 px-4 md:px-8 bg-ivory relative">
+        <div class="max-w-5xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-script text-4xl md:text-5xl text-burgundy mb-4">Lorem ipsum</h2>
+                <div class="flex justify-center items-center gap-2">
+                    <div class="h-px w-12 bg-saffron"></div>
+                    <i class="fa-solid fa-om text-saffron"></i>
+                    <div class="h-px w-12 bg-saffron"></div>
+                </div>
+            </div>
+
+            <!-- First Ceremony -->
+            <div class="text-center mb-8">
+                <h3 class="font-script text-3xl text-burgundy inline-block border-b border-gold pb-1 px-4">Sunday, July
+                    5</h3>
+            </div>
+
+            <div class="relative pb-12">
+                <div class="timeline-line hidden md:block"></div>
+                <div class="timeline-line md:hidden left-6"></div>
+
+                <div
+                    class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12 pl-14 md:pl-0">
+                    <div class="timeline-dot"></div>
+
+                    <div class="w-full md:w-[45%] md:text-right md:pr-10 mb-4 md:mb-0">
+                        <p class="text-saffron font-medium mb-1"><i class="fa-regular fa-clock mr-1"></i> 6:00 PM</p>
+                        <h4 class="font-script text-2xl text-maroon">Welcome & Mehndi</h4>
+                    </div>
+
+                    <div class="w-full md:w-[45%] md:pl-10">
+                        <div class="p-2 bg-white shadow-md img-tilt-right border border-rose">
+                            <img src="https://picsum.photos/seed/mehndi/500/300" alt="Mehndi"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Second Ceremony -->
+            <div class="text-center mb-8">
+                <h3 class="font-script text-3xl text-burgundy inline-block border-b border-gold pb-1 px-4">Saturday,
+                    July 11</h3>
+            </div>
+
+            <div class="relative pb-8">
+                <div class="timeline-line hidden md:block"></div>
+                <div class="timeline-line md:hidden left-6"></div>
+
+                <div
+                    class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12 pl-14 md:pl-0">
+                    <div class="timeline-dot"></div>
+
+                    <div class="w-full md:w-[45%] order-3 md:order-1 md:pr-10">
+                        <div class="p-2 bg-white shadow-md img-tilt-left border border-rose">
+                            <img src="https://picsum.photos/seed/ceremony/500/300" alt="Ceremony"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-[45%] order-2 md:pl-10 mb-4 md:mb-0">
+                        <p class="text-saffron font-medium mb-1"><i class="fa-regular fa-clock mr-1"></i> 10:00 AM</p>
+                        <h4 class="font-script text-2xl text-maroon">Baraat & Ceremony</h4>
+                    </div>
+                </div>
+
+                <div
+                    class="relative flex flex-col md:flex-row items-start md:items-center justify-between mb-12 pl-14 md:pl-0">
+                    <div class="timeline-dot"></div>
+
+                    <div class="w-full md:w-[45%] md:text-right md:pr-10 mb-4 md:mb-0">
+                        <p class="text-saffron font-medium mb-1"><i class="fa-regular fa-clock mr-1"></i> 7:00 PM</p>
+                        <h4 class="font-script text-2xl text-maroon">Evening Reception</h4>
+                    </div>
+
+                    <div class="w-full md:w-[45%] md:pl-10">
+                        <div class="p-2 bg-white shadow-md img-tilt-right border border-rose">
+                            <img src="https://picsum.photos/seed/reception/500/300" alt="Reception"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="relative flex flex-col md:flex-row items-start md:items-center justify-between pl-14 md:pl-0">
+                    <div class="timeline-dot"></div>
+
+                    <div class="w-full md:w-[45%] order-3 md:order-1 md:pr-10">
+                        <div class="p-2 bg-white shadow-md img-tilt-left border border-rose">
+                            <img src="https://picsum.photos/seed/party/500/300" alt="Party Time"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+
+                    <div class="w-full md:w-[45%] order-2 md:pl-10 mb-4 md:mb-0">
+                        <p class="text-saffron font-medium mb-1"><i class="fa-regular fa-clock mr-1"></i> 9:30 PM - Late
+                        </p>
+                        <h4 class="font-script text-2xl text-maroon">Party Time!</h4>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Photos Banner -->
+    <section class="py-16 bg-maroon text-ivory relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10"
+            style="background-image: url('data:image/svg+xml,%3Csvg width=\'60\' height=\'60\' viewBox=\'0 0 60 60\' xmlns=\'http://www.w3.org/2000/svg\'%3E%3Cg fill=\'none\' fill-rule=\'evenodd\'%3E%3Cg fill=\'%23C05C27\' fill-opacity=\'1\'%3E%3Cpath d=\'M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E');">
+        </div>
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="flex flex-col md:flex-row items-center justify-between max-w-5xl mx-auto gap-8">
+                <div class="text-center md:text-left">
+                    <h2 class="font-script text-4xl text-gold mb-2">Capture the Moments</h2>
+                    <p class="font-light text-rose/80">Help us collect memories from our special day</p>
+                </div>
+                <div>
+                    <a href="#upload-photos"
+                        class="px-8 py-3 border-2 border-gold text-gold hover:bg-gold hover:text-maroon transition-colors duration-300 font-medium tracking-wide rounded-sm inline-flex items-center">
+                        <i class="fa-solid fa-camera mr-3"></i> Upload Photos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Upload Iframe Section -->
+    <section id="upload-photos" class="py-20 bg-ivory">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-script text-4xl text-burgundy mb-4">Share Your Photos</h2>
+                <div class="flex justify-center items-center gap-2 mb-6">
+                    <div class="h-px w-8 bg-saffron"></div>
+                    <div class="h-2 w-2 rounded-full bg-gold"></div>
+                    <div class="h-px w-8 bg-saffron"></div>
+                </div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Please share any photos or videos you take during the
+                    celebrations. We would love to see the wedding through your eyes!</p>
+            </div>
+
+            <div class="max-w-4xl mx-auto bg-white p-2 md:p-4 rounded-lg shadow-xl border border-rose">
+                <iframe src="https://pigeonfiles.com/u/f7cj8xj7xrd7_-v78nurhw" class="w-full h-[600px] rounded"
+                    frameBorder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-20 bg-rose/30 border-t border-rose">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="font-script text-4xl text-burgundy mb-4">Photo Gallery</h2>
+                <div class="flex justify-center items-center gap-2 mb-6">
+                    <div class="h-px w-8 bg-saffron"></div>
+                    <div class="h-2 w-2 rounded-full bg-gold"></div>
+                    <div class="h-px w-8 bg-saffron"></div>
+                </div>
+                <p class="text-maroon text-sm max-w-xl mx-auto mb-2">
+                    <i class="fa-solid fa-circle-info text-saffron mr-2"></i>
+                    If an error appears please use either Google Chrome or Safari. Once uploaded please refresh to see
+                    the photos.
+                </p>
+            </div>
+
+            <div class="max-w-6xl mx-auto bg-white p-2 rounded-lg shadow-lg border border-gold/20">
+                <iframe id="idIframe" class="w-full h-[800px] rounded"
+                    src="https://drive.google.com/embeddedfolderview?id=1Ni8AnDzGcxy9eDpR0YPaaYISXjRMOjX3#grid"
+                    frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-maroon text-ivory py-12 text-center border-t-4 border-gold">
+        <div class="container mx-auto px-4">
+            <h2 class="font-script text-3xl text-gold mb-6">Mitesh & Nazneen</h2>
+            <div class="flex justify-center space-x-6 mb-8">
+                <div class="h-px w-12 bg-rose/30 mt-3"></div>
+                <i class="fa-solid fa-heart text-saffron"></i>
+                <div class="h-px w-12 bg-rose/30 mt-3"></div>
+            </div>
+            <p class="text-sm text-rose/60 font-light mb-2">Thank you for being part of our special day</p>
+            <p class="text-xs text-rose/40 mt-8">
+                Made by <a href="https://www.xerxes-bami.netlify.app"
+                    class="text-gold hover:text-ivory transition-colors">Xerxes Bamji</a>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
+</body>
+
+</html>
