@@ -1,8 +1,8 @@
 /* Essential custom styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: #F1E7D4;
-    color: #59362A;
+    background-color: #F8F6F0;
+    color: #240046;
     overflow-x: hidden;
 }
 
@@ -23,7 +23,7 @@ h6,
     z-index: 50;
     top: 0;
     left: 0;
-    background-color: rgba(89, 54, 42, 0.95);
+    background-color: rgba(36, 0, 70, 0.95);
     overflow-x: hidden;
     transition: 0.5s;
 }
@@ -40,14 +40,14 @@ h6,
     padding: 8px;
     text-decoration: none;
     font-size: 36px;
-    color: #D6B4A1;
+    color: #D4AF37;
     display: block;
     transition: 0.3s;
 }
 
 .overlay a:hover,
 .overlay a:focus {
-    color: #C05C27;
+    color: #E0AAFF;
 }
 
 .overlay .closebtn {
@@ -55,32 +55,32 @@ h6,
     top: 20px;
     right: 45px;
     font-size: 60px;
-    color: #D6B4A1;
+    color: #D4AF37;
     cursor: pointer;
 }
 
 .hero-bg {
-    background: linear-gradient(rgba(74, 90, 40, 0.6), rgba(89, 54, 42, 0.8)), url("https://picsum.photos/seed/indianwedding/1920/1080") center center no-repeat;
+    background: linear-gradient(rgba(90, 24, 154, 0.6), rgba(36, 0, 70, 0.8)), url("img/hero-bg.png") center center no-repeat;
     background-size: cover;
     background-attachment: fixed;
 }
 
 .mandala-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23C05C27' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%239D4EDD' fill-opacity='0.1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
 
 .gold-border {
-    border: 1px solid #D6B4A1;
+    border: 1px solid #D4AF37;
 }
 
 .btn-saffron {
-    background-color: #C05C27;
+    background-color: #9D4EDD;
     color: white;
     transition: all 0.3s ease;
 }
 
 .btn-saffron:hover {
-    background-color: #59362A;
+    background-color: #240046;
     transform: translateY(-2px);
 }
 
@@ -91,7 +91,7 @@ h6,
     top: 0;
     bottom: 0;
     width: 2px;
-    background-color: #D6B4A1;
+    background-color: #D4AF37;
     transform: translateX(-50%);
 }
 
@@ -109,8 +109,8 @@ h6,
     width: 16px;
     height: 16px;
     border-radius: 50%;
-    background-color: #F1E7D4;
-    border: 3px solid #C05C27;
+    background-color: #F8F6F0;
+    border: 3px solid #9D4EDD;
     z-index: 10;
     margin-top: 24px;
 }
