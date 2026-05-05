@@ -136,3 +136,49 @@ h6,
 .img-tilt-left:hover {
     transform: rotate(0deg);
 }
+
+/* Modern Itinerary Styles */
+.itinerary-day-pill {
+    background: linear-gradient(135deg, #5A189A, #9D4EDD);
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.35);
+}
+
+.itinerary-card {
+    position: relative;
+    background: white;
+    border-radius: 12px;
+    padding: 1.25rem 1.5rem 1.25rem 2rem;
+    box-shadow: 0 2px 12px rgba(36, 0, 70, 0.07);
+    border: 1px solid rgba(212, 175, 55, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    overflow: hidden;
+}
+
+.itinerary-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(36, 0, 70, 0.12);
+}
+
+.itinerary-card-accent {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 5px;
+    background: linear-gradient(180deg, #D4AF37, #9D4EDD);
+    border-radius: 12px 0 0 12px;
+}
+
+.itinerary-time-badge {
+    flex-shrink: 0;
+    margin-left: 1rem;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #9D4EDD;
+    background: rgba(157, 78, 221, 0.08);
+    border: 1px solid rgba(157, 78, 221, 0.2);
+    padding: 0.3rem 0.75rem;
+    border-radius: 999px;
+    white-space: nowrap;
+    letter-spacing: 0.03em;
+}
